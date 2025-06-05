@@ -12,7 +12,7 @@ namespace sistema.Application.Services.Regras
 
         protected abstract bool Validacao(string login, string dir);
 
-        // protected abstract bool RetornoValidado(bool entidade);
+
 
         public bool ValidacaoLogin(string dir)
         {

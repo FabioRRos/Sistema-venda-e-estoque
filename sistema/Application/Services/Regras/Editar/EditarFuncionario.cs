@@ -15,7 +15,17 @@ namespace sistema.Application.Services.Regras.Editar
 
             if (liberaAcesso)
             {
-                System.Console.WriteLine("Deu bom");
+                List<string> listaFunc = File.ReadAllLines(dir).ToList();
+                System.Console.WriteLine("Selecione o Funcionário que deseja alterar.");
+
+                for (int i = 1; i <= listaFunc.Count(); i++)
+                {
+                    List<string> listTemp = listaFunc[i].Split(',').ToList();
+                    System.Console.WriteLine($"{i}1 - {listTemp[i]} ");
+
+                }
+                var opcao = int.Parse(Console.ReadLine());
+                Console.ReadKey();
             }
             else
                 return;
