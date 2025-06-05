@@ -28,11 +28,20 @@ namespace sistema.Application.Services.Regras
                     int cont = 3;
                     do
                     {
+                        string senha = "";
                         System.Console.WriteLine("Digite sua senha");
-                        var senha = Console.ReadLine();
+                        // senha = Console.ReadLine();
+                        while (true)
+                        {
+                            var tecla = Console.ReadKey(true);
+                            if (tecla.Key == ConsoleKey.Enter) break;
+                            senha += tecla.KeyChar;
+                            Console.Write("*");
+                        }
 
                         if (senha == listaItens[3])
                         {
+                            Console.Clear();
                             return true;
                         }
                         else
