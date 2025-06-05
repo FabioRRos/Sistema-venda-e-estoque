@@ -1,0 +1,4 @@
+1,102030,Cabo USB-C 2 metros,10,2000,1,Cabos USB-C,Cabo USB-C 2 metros Preto
+2,102031,Cabo USB-C 3 metros,5,1000,1,Cabos USB-C,Cabo USB-C 3 metros Preto
+3,102032,Cabo USB-C 1.5 metros,2,1500,1,Cabos USB-C,Cabo de 1,5 metros
+4,102022,Cabo de Rede RJ45 azul,5,4500,7,Cabo Rj45 3 metros,Azul

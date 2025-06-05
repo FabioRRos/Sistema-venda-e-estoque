@@ -1,0 +1,14 @@
+C:\RosDev\sistema\bin\Debug\net9.0\sistema.exe
+C:\RosDev\sistema\bin\Debug\net9.0\sistema.deps.json
+C:\RosDev\sistema\bin\Debug\net9.0\sistema.runtimeconfig.json
+C:\RosDev\sistema\bin\Debug\net9.0\sistema.dll
+C:\RosDev\sistema\bin\Debug\net9.0\sistema.pdb
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.GeneratedMSBuildEditorConfig.editorconfig
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.AssemblyInfoInputs.cache
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.AssemblyInfo.cs
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.csproj.CoreCompileInputs.cache
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.dll
+C:\RosDev\sistema\obj\Debug\net9.0\refint\sistema.dll
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.pdb
+C:\RosDev\sistema\obj\Debug\net9.0\sistema.genruntimeconfig.cache
+C:\RosDev\sistema\obj\Debug\net9.0\ref\sistema.dll
