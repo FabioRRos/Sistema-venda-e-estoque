@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using sistema.Application.Services.Cadastro;
+using sistema.Domain.Entities;
 
 namespace sistema.Application.Services.Regras.Editar
 {
@@ -27,8 +29,12 @@ namespace sistema.Application.Services.Regras.Editar
                 System.Console.WriteLine($"{i + 1} - {listTemp[1]} ");
             }
             var opcao = int.Parse(Console.ReadLine());
-            Console.ReadKey();
-            Thread.Sleep(2500);
+
+            Funcionario funcionario = new Funcionario();
+
+            listaFunc.RemoveAt(opcao - 1);
+            var cadastrarFuncionario = new CadastrarFuncionario();
+            cadastrarFuncionario.CadNovoFuncionario(dir);
         }
     }
 }
