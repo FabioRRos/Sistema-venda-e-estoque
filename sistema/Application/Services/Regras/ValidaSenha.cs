@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace sistema.Application.Services.Regras
@@ -14,6 +15,7 @@ namespace sistema.Application.Services.Regras
             List<string> lista = File.ReadAllLines(dir).ToList();
 
             int numLista = lista.Count;
+            bool loc = false;
 
 
 
@@ -22,7 +24,7 @@ namespace sistema.Application.Services.Regras
                 List<string> listaItens = linhaTemp.Split(',').ToList();
 
 
-                if (listaItens[2] == login)
+                if (listaItens[2] == login && listaItens[0] == "1")
                 {
                     bool loop = false;
                     int cont = 3;
@@ -42,6 +44,7 @@ namespace sistema.Application.Services.Regras
                         if (senha == listaItens[3])
                         {
                             Console.Clear();
+                            loop = true;
                             return true;
                         }
                         else
@@ -69,22 +72,28 @@ namespace sistema.Application.Services.Regras
 
                     } while (!loop);
 
+
                 }
-                else
-                {
-                    System.Console.WriteLine("Login não encontrado, tente novamente");
-                    Thread.Sleep(2500);
-                    return false;
-                }
+                else if (listaItens[2] == login && listaItens[0] == "2") loc = true;
             }
-            System.Console.WriteLine("Não devia estar aqui");
+
+            if (!loc)
+            {
+                System.Console.WriteLine("Login não localizado.");
+
+            }
+            else if (loc)
+            {
+                System.Console.WriteLine("Não possui acesso para esta opção.");
+            }
+
             Thread.Sleep(2500);
             return false;
-
         }
 
-
+        internal void Deconstruct(out object validaLogin, out object loc)
+        {
+            throw new NotImplementedException();
+        }
     }
-
-
 }
